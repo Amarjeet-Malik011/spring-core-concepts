@@ -16,5 +16,5 @@ dump.rdb
 .slcache/
 core
 .gradle/
-build/
+/build/
 .idea/
