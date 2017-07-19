@@ -7,7 +7,7 @@ public class ClientXMLApplication {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "config.xml");
+                "config_di.xml");
         MyXMLApplication app = context.getBean(MyXMLApplication.class);
 
         app.processMessage("Hi kavita xml based", "kavita9211@gmail.com");
