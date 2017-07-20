@@ -5,12 +5,12 @@ import springbean_autowiring.Employee;
 
 public class EmployeeService {
 
-    private Employee employeeasd;
+    private Employee eqwmployeeasd;
 
     // constructor is used for autowire by constructor
     public EmployeeService(Employee emp) {
         System.out.println("Autowiring by constructor used ");
-        this.employeeasd = emp;
+        this.eqwmployeeasd = emp;
     }
 
     // default constructor to avoid BeanInstantiationException for autowire
@@ -22,10 +22,10 @@ public class EmployeeService {
     // used for autowire byName and byType
     public void setEmployee(Employee emp) {
         System.out.println("Autowiring By name");
-        this.employeeasd = emp;
+        this.eqwmployeeasd = emp;
     }
 
     public Employee getEmployee() {
-        return this.employeeasd;
+        return this.eqwmployeeasd;
     }
 }
