@@ -6,4 +6,9 @@ public class Tea implements Drink{
         System.out.println("TEA");
         
     }
+
+    @Override
+    public String toString() {
+        return "Tea instance";
+    }
 }

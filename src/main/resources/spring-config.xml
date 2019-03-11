@@ -3,4 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="tea" class="basicExample.Tea"></bean>
+    <bean id="tea1" class="basicExample.Tea"></bean>
+    <bean id="coffee" class="basicExample.Coffee"></bean>
+    <bean id="restaurent" class="basicExample.Restaurent">
+        <!--<constructor-arg ref="coffee"/>-->
+        <constructor-arg name="name" value="tea"/>
+
+        <!--use property tag while setting values through setters-->
+        <property name="age" value="21"></property>
+
+        <!--setting refrence type value through  d=setter-->
+        <!--<property name="drink" value="tea"></property>-->
+
+    </bean>
+
 </beans>
